@@ -519,10 +519,6 @@ hr{
         font-size: 40px;
         line-height: 40px;
     }
-    .btn-primary{
-        display: block;
-        width: 100%;
-    }
 .site-title{
     font-size: 30px;
     
@@ -548,7 +544,9 @@ hr{
     flex-direction: column;
     gap: 30px;
 }
-
+.extra{
+    width: 100%;
+}
 
 /* bmi */
 .bmi-container{
@@ -580,3 +578,38 @@ footer li>a{
 }
 }
 
+/* responsive medium device */
+@media only screen and (min-width:576px) and (max-width:992px){
+
+.large{
+    max-width: 992px;
+    padding:  0 50px;
+}
+.hero-container{
+    flex-direction: column;
+    gap: 30px;
+}
+.run-container{
+    padding: 20px;
+    margin: 0 20px
+}
+.habit-box{
+        grid-template-columns: repeat(2, 1fr);
+}
+.chart-container{
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer-container{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "site-info site-info"
+    "footer-menu1 footer-menu2";
+    gap: 0;
+    justify-items: start;
+}
+footer li>a{
+    font-size: 20px;
+}
+}
