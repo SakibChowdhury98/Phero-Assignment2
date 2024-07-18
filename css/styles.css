@@ -8,8 +8,14 @@
     margin: 0;
     padding: 0;
 }
+section{
+    margin-top: 50px;
+}
 :root{
     --primary-color: rgb(230, 83, 60);
+}
+.text-center{
+    text-align: center;
 }
 .white{
     color: white;
@@ -20,10 +26,16 @@
 .flex{
     display: flex;
 }
-body{
-    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(19, 19, 19, 0.8) 100%);
+.grid{
+    display: grid;
 }
-main{
+header{
+    background: linear-gradient(90.00deg, rgb(17, 17, 17),rgba(19, 19, 19, 0.8) 100%);
+}
+body{
+    background-color: black;
+}
+.large{
     max-width: 1140px;
     margin: 0 auto;
 }
@@ -44,10 +56,14 @@ button>a{
     font-size: 1rem;
     text-decoration: none;
 }
-section{
-    margin-top: 50px;
+.section-title{
+    font-size: 4rem;
 }
-
+.section-description{
+    font-size: 1rem;
+    margin: 25px 0;
+    font-weight: 300;
+}
 
 
 
@@ -56,8 +72,6 @@ header{
     margin-top: 30px;
 }
 .header-container{
-    max-width: 1140px;
-    margin: 0 auto;
     justify-content: space-between;
     align-items: center;
 }
@@ -88,7 +102,7 @@ header{
 }
 
 /* hero section */
-.hero{
+.hero-container{
     justify-content: space-between;
     align-items: center;
     gap: 100px;
@@ -104,10 +118,7 @@ header{
     font-weight: 500;
     font-size: 95px;
 }
-.section-description{
-    font-size: 1rem;
-    margin: 25px 0;
-}
+
 .hero-image-container{
     position: relative;
 }
@@ -146,4 +157,25 @@ header{
     bottom: 50px;
     left: -50px;
 }
-/* Responsive small devices*/
+
+
+/* change your habit */
+
+.habit img{
+    border-radius: 50%;
+    border: 3px solid  rgba(255, 255, 255, 0.158);;
+}
+
+.habit-box{
+    margin-top: 50px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+.habit-name{
+    margin-top: 20px;
+}
+.habit-description{
+    font-size: 1rem;
+    margin: 10px 0;
+    font-weight: 300;
+}
