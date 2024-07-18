@@ -78,7 +78,7 @@ header{
 }
 .site-title{
     font-weight: bold;
-    font-size: 70px;
+    font-size: 50px;
     color: var(--primary-color);
 }
 .menu-items{
@@ -191,10 +191,10 @@ header{
     align-items: center;
 }
 .text-container{
-    width: 50%;
+    width: 80%;
 }
 
-.image-container{
+.image-container{;
     height: 310px;
     width: 370px;
     border-radius: 20px;
@@ -487,4 +487,52 @@ hr{
 }
 .copyright>p{
     font-size: 20px;
+}
+
+
+
+/* responsive small device */
+@media only screen and (max-width:576px) {
+    /* header */
+    .large{
+        max-width: 576px;
+        padding: 20px;
+    }
+    section{
+        margin-top: 30px;
+    }
+    .section-title{
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .btn-primary{
+        display: block;
+        width: 100%;
+    }
+.site-title{
+    font-size: 30px;
+    
+}
+.hero-title{
+    font-size: 50px;
+}
+/* hero section */    
+
+.hero-container{
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* habit */
+.habit-box{
+    grid-template-columns: 1fr;
+}
+
+/* Run an extra mile easily */
+
+.run-container{
+    flex-direction: column;
+    gap: 30px;
+}
+
 }
