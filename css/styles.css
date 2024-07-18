@@ -58,6 +58,7 @@ button>a{
 }
 .section-title{
     font-size: 4rem;
+    line-height: 70px;
 }
 .section-description{
     font-size: 1rem;
@@ -178,4 +179,25 @@ header{
     font-size: 1rem;
     margin: 10px 0;
     font-weight: 300;
+}
+
+/* Run an extra mile easily */
+.run-container{
+    background-color: rgb(34, 34, 34);
+    border-radius: 18px;
+    padding: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+.text-container{
+    width: 50%;
+}
+
+.image-container{
+    height: 310px;
+    width: 370px;
+    border-radius: 20px;
+    background-image: url("../images/run.jpg");
+    background-position: 68% 30%;
+    background-repeat: no-repeat;
 }
