@@ -194,7 +194,7 @@ header{
     width: 80%;
 }
 
-.image-container{;
+.image-container{
     height: 310px;
     width: 370px;
     border-radius: 20px;
@@ -535,4 +535,34 @@ hr{
     gap: 30px;
 }
 
+
+/* bmi */
+.bmi-container{
+    margin-top: 120px;
+}
+.chart-container{
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+/* team */
+.team{
+    margin: 60px auto;
+}
+.members{
+    grid-template-columns: 1fr;
+}
+}
+
+.footer-container{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "site-info site-info"
+    "footer-menu1 footer-menu2";
+    gap: 0;
+    justify-items: start;
+}
+footer li>a{
+    font-size: 20px;
 }
