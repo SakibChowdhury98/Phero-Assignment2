@@ -78,6 +78,7 @@ header{
 }
 .site-title{
     font-weight: bold;
+    font-size: 70px;
     color: var(--primary-color);
 }
 .menu-items{
@@ -378,6 +379,9 @@ input, select {
 
 
 /* meet our team */
+.team{
+    margin: 100px auto;
+}
 .members{
     padding: 20px;
     border-radius: 20px;
@@ -436,4 +440,51 @@ input, select {
     background-blend-mode: overlay; 
     background-position: top center;
     background-size: cover;
+}
+
+
+/* footer */
+footer{
+    padding: 50px 0 50px 0;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+footer ul{
+    margin-top: 20px;
+}
+footer li{
+    list-style-type: none;
+    font-weight: 400;
+    margin: 10px 0;
+}
+footer li>a{
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 300;
+ 
+}
+.footer-container{
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "site-info site-info footer-menu1 footer-menu2";
+    justify-content: space-between;
+    justify-items: flex-end;
+}
+.site-info{
+    grid-area: site-info;
+}
+.footer-menu1{
+    grid-area: footer-menu1;
+}
+.footer-menu2{
+    grid-area: footer-menu2;
+}
+
+hr{
+    max-width: 1140px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 50px auto 0 auto;
+    background-color:rgba(255, 255, 255, 0.1);
+}
+.copyright>p{
+    font-size: 20px;
 }
