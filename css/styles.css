@@ -72,6 +72,9 @@ button>a{
 header{
     margin-top: 30px;
 }
+.mobile-menu{
+    display: none;
+}
 .header-container{
     justify-content: space-between;
     align-items: center;
@@ -494,6 +497,17 @@ hr{
 /* responsive small device */
 @media only screen and (max-width:576px) {
     /* header */
+    header{
+        padding: 0 20px;
+    }
+    .header-container{
+        display: none;
+    }
+    .mobile-menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     .large{
         max-width: 576px;
         padding: 20px;
@@ -553,8 +567,6 @@ hr{
 .members{
     grid-template-columns: 1fr;
 }
-}
-
 .footer-container{
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
@@ -566,3 +578,5 @@ hr{
 footer li>a{
     font-size: 20px;
 }
+}
+
