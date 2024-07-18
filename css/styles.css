@@ -1,25 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
 
 
 /* Shared style */
 *{
     font-family: "Jost", sans-serif;
+    margin: 0;
+    padding: 0;
 }
 :root{
     --primary-color: rgb(230, 83, 60);
 }
-
+.white{
+    color: white;
+}
+.gray1{
+    color: rgba(255, 255, 255, 0.5)
+}
 .flex{
     display: flex;
 }
+body{
+    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(19, 19, 19, 0.8) 100%);
+}
+main{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.btn-primary{
+    background-color: rgb(230, 83, 60);
+    padding: 16px 40px;
+    border: 1px solid rgb(230, 83, 60);
+    border-radius: 40px;
+}
+.btn-secondary{
+    background-color: rgb(0, 0, 0);
+    padding: 16px 40px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 40px;
+}
+button>a{
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+}
+section{
+    margin-top: 50px;
+}
+
+
+
 
 /* header style */
-.mobile-menu{
-    display: none;
-}
 header{
-    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(19, 19, 19, 0.8) 100%);
+    margin-top: 30px;
 }
 .header-container{
     max-width: 1140px;
@@ -36,7 +70,7 @@ header{
     justify-content: center;
     align-items: center;
     border: 1px solid rgba(255, 255, 255, 0.158);
-    padding: 5px 20px;
+    padding: 5px 10px;
     border-radius: 40px;
 }
 .menu-items>li{
@@ -53,26 +87,63 @@ header{
     border-radius: 40px;
 }
 
-
-
-/* Responsive small devices*/
-@media screen and(max-width:576px) {
-    /* header */
-    .header-container{
-        display: none;
-    }
-    .mobile-menu{
-        display: flex;
-        max-width: 576px;
-        margin: 0 auto;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .mobile-menu i.fa-solid.fa-bars.menu-icon {
-        color: white;
-    }{
-        color: white;
-        height: 20px;
-        width: 20px;
-    }
+/* hero section */
+.hero{
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
 }
+.hero-title{
+    font-size: 78px;
+    font-weight: 900;
+    line-height: 70px;
+    margin: 25px 0;
+}
+.cursive{
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 500;
+    font-size: 95px;
+}
+.section-description{
+    font-size: 1rem;
+    margin: 25px 0;
+}
+.hero-image-container{
+    position: relative;
+}
+.hero-image-container .videos{
+    position: absolute;
+    top: 150px;
+    right: -70px;
+}
+
+
+.hero-image-container .videos,.tutorial{
+    display: relative;
+    width: 170px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 15px 25px;
+    border-radius: 12px;
+}
+.icon-container{
+    background-color: var(--primary-color);
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 10px;
+}
+.description{
+    font-size: 12px;
+}
+
+.tutorial{
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 50px;
+    left: -50px;
+}
+/* Responsive small devices*/
