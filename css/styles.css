@@ -9,7 +9,7 @@
     padding: 0;
 }
 section{
-    margin-top: 50px;
+    margin-top: 100px;
 }
 :root{
     --primary-color: rgb(230, 83, 60);
@@ -135,7 +135,7 @@ header{
     width: 170px;
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
-    padding: 15px 25px;
+    padding: 10px 20px;
     border-radius: 12px;
 }
 .icon-container{
@@ -151,7 +151,7 @@ header{
 }
 
 .tutorial{
-    gap: 20px;
+    gap: 10px;
     justify-content: space-between;
     align-items: center;
     position: absolute;
@@ -204,7 +204,7 @@ header{
 
 
 
-/* trainning and exercise */
+/* training and exercise */
 .row1{
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
@@ -312,4 +312,66 @@ header{
     position: absolute;
     bottom: 20px;
     left: 20px;
+}
+
+/* bmi calculator */
+.bmi-container{
+    max-width: 1140px;
+    margin: 200px auto 0 auto;
+    padding-left: 500px;
+}
+
+.bmi-chart{
+    background-color: rgb(34, 34, 34);
+}
+.chart-container{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    gap: 100px;
+    justify-content: space-between;
+}
+.chart table,th,td{
+    border: 1px solid gray;
+    color: gray;
+    padding: 10px 25px;
+    border-collapse: collapse;
+}
+.chart-title{
+    margin: 20px 0 20px 0;
+}
+
+
+/* form calculator */
+.form-container {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+input::placeholder{
+    color: white;
+}
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    gap: 15px;
+}
+
+input, select {
+    background-color: #444;
+    border: 1px solid #555;
+    border-radius: 4px;
+    padding: 10px;
+    color: #fff;
+    width: 48%;
+}
+.calculate{
+    width: fit-content;
+    padding: 15px 100px;
 }
