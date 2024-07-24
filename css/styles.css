@@ -29,9 +29,7 @@ section{
 .grid{
     display: grid;
 }
-header{
-    background: linear-gradient(90.00deg, rgb(17, 17, 17),rgba(19, 19, 19, 0.8) 100%);
-}
+
 body{
     background-color: black;
 }
@@ -70,7 +68,8 @@ button>a{
 
 /* header style */
 header{
-    margin-top: 30px;
+    padding-top: 30px;
+    background: linear-gradient(360.00deg, rgb(0, 0, 0), rgb(26, 26, 26) 100%);
 }
 .mobile-menu{
     display: none;
@@ -85,8 +84,8 @@ header{
     color: var(--primary-color);
 }
 .menu-items{
-    gap: 30px;
-    justify-content: center;
+    
+    justify-content: space-between;
     align-items: center;
     border: 1px solid rgba(255, 255, 255, 0.158);
     padding: 5px 10px;
@@ -94,6 +93,7 @@ header{
 }
 .menu-items>li{
     list-style-type: none;
+    padding: 0 20px;
 }
 .menu-items li>a{
     text-decoration: none;
@@ -102,7 +102,7 @@ header{
 }
 .menu-items li:nth-child(1){
     background-color: var(--primary-color);
-    padding: 2.5px 20px;
+    padding: 10px 20px;
     border-radius: 40px;
 }
 
@@ -194,7 +194,7 @@ header{
     align-items: center;
 }
 .text-container{
-    width: 80%;
+    width: 50%;
 }
 
 .image-container{
@@ -224,7 +224,8 @@ header{
     height: 200px;
     background:  rgba(6, 255, 210, 0.5) url(../images/exercise1.jpg);
     background-blend-mode: overlay;
-    background-size: 110%;
+    background-size: cover;
+    background-position: center center;
 }
 .squats .exercise-name{
     position: absolute;
@@ -238,7 +239,8 @@ header{
     height: 200px;
     background:  rgba(255, 0, 0, 0.3) url(../images/exercise2.png);
     background-blend-mode: overlay;
-    background-size: 110%;
+    background-size: cover;
+    background-position: center center;
 }
 
 .push .exercise-name{
@@ -254,7 +256,8 @@ header{
     height: 200px;
     background:  rgba(0, 0, 0, 0.5) url(../images/exercise3.png);
     background-blend-mode: overlay;
-    background-size: 110%;
+    background-size: cover;
+    background-position: center center;
 }
 
 .jumping .exercise-name{
@@ -279,7 +282,8 @@ header{
     height: 200px;
     background:  rgba(0, 0, 0, 0.5) url(../images/exercise4.png);
     background-blend-mode: overlay;
-    background-size: 110%;
+    background-size: cover;
+    background-position: center center;
 }
 .leg .exercise-name{
     position: absolute;
@@ -293,7 +297,8 @@ header{
     height: 200px;
     background:  rgba(66, 255, 0, 0.3) url(../images/exercise5.jpg);
     background-blend-mode: overlay;
-    background-size: 110%;
+    background-size: cover;
+    background-position: center center;
 }
 
 .press .exercise-name{
@@ -309,7 +314,8 @@ header{
     height: 200px;
     background:  rgba(0, 71, 255, 0.3) url(../images/exercise6.jpg);
     background-blend-mode: overlay;
-    background-size: 110%;
+    background-size: cover;
+    background-position: center center;
 }
 
 .pull .exercise-name{
@@ -371,7 +377,7 @@ input, select {
     background-color: #444;
     border: 1px solid #555;
     border-radius: 4px;
-    padding: 10px;
+    padding: 1cqb;
     color: #fff;
     width: 48%;
 }
@@ -399,7 +405,6 @@ input, select {
 .member{
     height: 270px;
     width: 100%;
-    
     border-radius: 20px;
     position: relative;
 }
@@ -435,7 +440,7 @@ input, select {
 .trainer5{
     background: rgba(0, 0, 0, 0.2) url("../images/trainer5.png");
     background-blend-mode: overlay; 
-    background-position: top center;
+    background-position: center center;
     background-size: cover;
 }
 .trainer6{
@@ -599,6 +604,7 @@ footer li>a{
 .chart-container{
     flex-direction: column;
     gap: 30px;
+    padding-bottom: 50px;
 }
 
 .footer-container{
