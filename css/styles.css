@@ -163,6 +163,35 @@ header{
     left: -50px;
 }
 
+/* our programs */
+.program-content{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.program{
+    height: 530px;
+    width: 380px;
+    margin-bottom: 20px;
+    backdrop-filter: blur(50px);
+}
+.program:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, tomato 0px 0px 0px 3px;
+    transition: 200ms ease-in-out;
+}
+.gym{
+    background-image: url("../images/portfolio-list-img-1.jpg");
+    background-size: cover;
+
+}
+.cardio{
+    background-image: url("../images/portfolio-list-img-2.jpg");
+    background-size: cover;
+}
+.body{
+    background-image: url("../images/portfolio-list-img-4.jpg");
+    background-size: cover;
+}
+
 
 /* change your habit */
 
@@ -205,6 +234,7 @@ header{
     background-position: 68% 30%;
     background-repeat: no-repeat;
 }
+
 
 
 
@@ -371,15 +401,16 @@ input::placeholder{
     justify-content: space-between;
     margin-bottom: 15px;
     gap: 15px;
+    width: 100%;
 }
 
 input, select {
     background-color: #444;
     border: 1px solid #555;
     border-radius: 4px;
-    padding: 1cqb;
+    padding: 10px;
     color: #fff;
-    width: 48%;
+    width: 100%;
 }
 .calculate{
     width: fit-content;
@@ -467,7 +498,7 @@ footer li{
 footer li>a{
     color: rgba(255, 255, 255, 0.5);
     text-decoration: none;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 300;
  
 }
@@ -494,7 +525,7 @@ hr{
     background-color:rgba(255, 255, 255, 0.1);
 }
 .copyright>p{
-    font-size: 20px;
+    font-size: 18px;
 }
 
 
@@ -536,6 +567,19 @@ hr{
 .hero-container{
     flex-direction: column;
     gap: 30px;
+}
+
+/* our-program */
+.program-content{
+    max-width: 576px;
+}
+.program-content{
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+.program{
+    height: 300px;
+    width: 100%;
 }
 
 /* habit */
@@ -594,6 +638,21 @@ footer li>a{
     flex-direction: column;
     gap: 30px;
 }
+/* our program */
+.program-container{
+    min-width: 577px;
+    max-width: 992px;
+}
+.program-content{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.program{
+    height: 300px;
+    width: 100%;
+}
+
+/* run */
 .run-container{
     padding: 20px;
     margin: 0 20px
