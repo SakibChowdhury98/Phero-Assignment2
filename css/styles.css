@@ -364,10 +364,13 @@ header{
 .bmi-chart{
     background-color: rgb(34, 34, 34);
 }
+.chart{
+    width: 100%;
+}
 .chart-container{
     padding-top: 50px;
     padding-bottom: 50px;
-    gap: 100px;
+    gap: 20px;
     justify-content: space-between;
 }
 .chart table,th,td{
@@ -382,6 +385,9 @@ header{
 
 
 /* form calculator */
+.calculator{
+    width: 100%;
+}
 .form-container {
     background-color: #333;
     padding: 20px;
