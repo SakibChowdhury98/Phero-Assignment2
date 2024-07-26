@@ -546,6 +546,7 @@ hr{
         display: none;
     }
     .mobile-menu{
+        padding-top: 20px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -594,7 +595,9 @@ hr{
 }
 
 /* Run an extra mile easily */
-
+.text-container{
+    width: 70%;
+}
 .run-container{
     flex-direction: column;
     gap: 30px;
